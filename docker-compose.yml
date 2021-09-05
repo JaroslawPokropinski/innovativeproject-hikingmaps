@@ -1,0 +1,9 @@
+services:
+  web:
+    build: ./hikingmaps-angular
+    ports:
+      - "80:80"
+  redis:
+    build: ./hikingmaps_spring
+    ports:
+      - "8080:8080"
